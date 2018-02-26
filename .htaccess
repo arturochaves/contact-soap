@@ -1,0 +1,5 @@
+RewriteEngine On
+RewriteRule ^setcontact/api$ server.php
+
+RewriteEngine On
+RewriteRule ^setcontact$ setcontact.php

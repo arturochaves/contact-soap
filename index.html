@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact SOAP</title>
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/myscripts.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans" />
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+</head>
+
+<body>
+    <div id="wrapper">
+
+        <div class="contentDiv">
+            <h3>Contact form</h3>
+            <span class="messages"></span>
+            <form class="contactForm" method="post">
+                <div class="contactField">
+                    <label for="name">Name</label>
+                    <input id="name" name="name" type="text" autocomplete='name' />
+                </div>
+                <div class="contactField">
+                    <label for="email">E-Mail</label>
+                    <input id="email" name="email" type="text" autocomplete='email' />
+                </div>
+                <div class="contactField">
+                    <label for="phone">Phone Number</label>
+                    <input id="phone" name="phone" type="text" autocomplete='tel-national' />
+                </div>
+                <div class="contactField">
+                    <label for="address">Address</label>
+                    <input id="address" name="address" type="text" autocomplete='street-address' />
+                </div>
+                <input type="submit" value="add new contact" class="formSubmit" />                
+            </form>
+
+            <div class="optionsDiv">
+                <input type="button" value="all" class="allSubmit" />
+                <form class="searchForm" method="post">
+                    <input id="name" name="name" type="text" autocomplete='name' placeholder="...by name" />
+                    <input type="submit" value="search" class="searchSubmit" />
+                </form>
+                <div class="clearer"></div>
+            </div>
+            <div class="resultDiv"></div>
+            <div class="loading">
+                <img src="images/ajax-loader.gif " alt="loading " />
+            </div>            
+        </div>
+    </div>
+</body>
+
+</html>

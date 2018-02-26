@@ -1,0 +1,226 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*
+Multireisen site CSS
+*/
+
+body{    
+    font-family: "Open Sans";
+    font-size: 16px;    
+    line-height: 22px;
+}
+
+.clearer{
+    clear:both;
+    padding:0;
+    float:none;
+    margin:0;
+}
+
+/*WRAPPER*/
+#wrapper{    
+    position:relative;
+    margin: 60px auto;    
+    max-width: 400px;    
+    min-width: 320px; 
+    overflow: hidden;
+    padding:0 45px;
+}
+
+h3{
+    font-size:20px;
+    margin-bottom:15px;
+}
+
+.contactForm{
+    max-width:400px;
+    text-align: right;
+    margin-bottom:30px;
+    padding-bottom:20px;
+    border-bottom:2px solid #000;
+}
+
+.contactField{
+    margin-bottom:4px;
+}
+
+.contactField label{
+    line-height:40px;
+    font-size:14px;
+}
+
+input[type="text"]{
+    width:223px;
+    height:27px;    
+    border: 1px solid #000;
+    margin-left:11px;
+    padding: 0 10px;
+}
+
+input[type="button"],
+input[type="submit"]{
+    height:33px;
+    line-height:33px;
+    width:auto;
+    border: 1px solid #000;
+    margin:10px 0;
+    padding: 0 20px;
+    font-size:20px;
+    background:#fff;    
+}
+
+input[type="button"]:hover,
+input[type="submit"]:hover{    
+    background:#EEE;
+    cursor: pointer;
+}
+
+.loading{
+    display:none;
+}
+
+.messages{
+    font-size:12px;    
+    color:red;
+    padding-top: 15px;
+    display:block;
+    font-weight: bold;
+}
+
+.messages.mvalid{    
+    color: green;
+}
+
+/*Validation*/
+label.error{
+    display:block;  
+    font-size:12px; 
+    color:red; 
+    line-height: 12px;
+    padding-bottom: 7px;
+}
+
+input[type="text"].error{
+    background-color:#ffebeb;
+    border: 1px solid red;
+}
+
+/*options*/
+.optionsDiv{
+    border-bottom:2px dotted #aaa;
+    padding-bottom:25px;
+    margin-bottom:25px;
+}
+
+.optionsDiv .allSubmit{
+    float:left;
+    width:40%;
+    margin:0;
+}
+
+.optionsDiv form.searchForm{
+    float:right;
+    width:45%;
+    padding-left:5%;
+    border-left: 2px solid #000;
+}
+
+.optionsDiv form.searchForm input{
+    width: 90%;
+    margin:0 0 10px;
+    padding: 0 5%;
+}
+
+.optionsDiv form.searchForm input[type="submit"]{
+    width: 100%;    
+}
+
+.resultDiv .result form span{
+    width:60px;    
+    display:inline-block;
+}
+
+.resultDiv .result{
+    list-style-type: none;
+    margin-bottom:25px;    
+    background-color:#F5F5F5;
+    padding:5%;
+}
+.resultDiv .result input{
+    margin-left:0;
+    margin-bottom:0;
+}
+
+.resultminiDiv img{
+    padding-top:15px;
+}
+
+.resultDiv .result input.updateForm{
+    margin-right:10px;
+}
+
+.resultDiv .result input.deleteForm{
+    background:#ff6f6f;
+}
+
+@media only screen and (max-width: 470px){
+    .contactField label{
+        display: block;
+        line-height: 24px;
+        padding-top:10px;
+    }    
+    .resultDiv li input{
+        width: 195px;
+    }
+    .resultDiv li input[type="button"],
+    .resultDiv li input[type="submit"]{
+        width: 140px;
+    }
+}
